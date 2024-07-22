@@ -35,7 +35,7 @@ module "benchmarker" {
   name          = "isucon-benchmarker"
   instance_type = local.benchmarker_instance_type
 
-  subnet_id         = module.vpc.public_subnets[0]
+  subnet_id         = module.vpc.private_subnets[0]
   security_group_id = module.benchmarker_security_sg.security_group_id
 
   instance_count = local.benchmarker_instance_count
