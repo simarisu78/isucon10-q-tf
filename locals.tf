@@ -2,7 +2,7 @@ locals {
   team_counts = 1
 
   # github_username
-  github_username = "simarisu78"
+  github_username = "<your_username>"
 
   # bastion
   bastion_instance_type = "t3.small"
